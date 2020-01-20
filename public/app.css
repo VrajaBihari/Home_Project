@@ -1,0 +1,234 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.Nav_Bar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  background-color: #dfbe9f;
+  position: sticky;
+  top: 0; }
+  .Nav_Bar a {
+    text-decoration: none;
+    text-shadow: blueviolet;
+    color: #663216;
+    outline: none; }
+  .Nav_Bar .logo {
+    font: 35px bold;
+    margin: 14px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none; }
+  .Nav_Bar .nav_Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 50px; }
+    .Nav_Bar .nav_Button li {
+      float: left;
+      padding: 10px 20px;
+      font-size: larger;
+      list-style: none; }
+    .Nav_Bar .nav_Button li:hover {
+      border-bottom: brown;
+      transition: border-bottom 1s; }
+
+.front__Pic {
+  margin-top: 70px;
+  position: fixed;
+  width: 100%;
+  height: 740px;
+  background-repeat: no-repeat, repeat;
+  background-color: #ac7139;
+  border: 1px solid #ac7139;
+  display: flex; }
+  .front__Pic .front_Text {
+    padding-top: 100px;
+    padding-left: 200px; }
+    .front__Pic .front_Text p, .front__Pic .front_Text h1, .front__Pic .front_Text h3 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: antiquewhite; }
+    .front__Pic .front_Text h1 {
+      font-size: 50px; }
+    .front__Pic .front_Text h3 {
+      font-size: 30px; }
+
+button {
+  margin: 0;
+  padding: 10px;
+  width: 120px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  background-color: antiquewhite;
+  color: #663216;
+  border: none;
+  outline: none;
+  border-radius: 20px; }
+  button:hover {
+    opacity: 80%; }
+
+.about_Me {
+  position: absolute;
+  margin-top: 635px;
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-color: azure; }
+  .about_Me .my_Photo {
+    width: 35%;
+    min-width: 550px;
+    height: 700px;
+    background-color: #dfbe9f;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .about_Me .my_Photo img {
+      margin: 0 50px; }
+  .about_Me .about_myself {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .about_Me .about_myself__content {
+      margin: 100px 200px;
+      display: flex;
+      flex-direction: column;
+      width: 400px; }
+      .about_Me .about_myself__content p, .about_Me .about_myself__content h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        line-height: 1.6;
+        color: #ac7139; }
+      .about_Me .about_myself__content h2 {
+        font-size: 40px; }
+      .about_Me .about_myself__content button {
+        margin-top: 40px;
+        background-color: #dfbe9f; }
+
+.specializations {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7ce9f;
+  height: 600px;
+  width: 100%;
+  margin-top: 1335px;
+  padding: 100px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .specializations__content {
+    margin-top: 0px;
+    width: 1000px; }
+    .specializations__content p {
+      margin-top: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 30px; }
+    .specializations__content h4 {
+      text-align: center;
+      font-weight: 0;
+      font-style: italic;
+      line-height: 40px; }
+    .specializations__content__list {
+      width: 100%;
+      margin-top: 80px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      .specializations__content__list ul {
+        list-style-type: square;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between; }
+        .specializations__content__list ul li {
+          text-align: left;
+          font-size: 20px;
+          line-height: 20px;
+          width: 200px;
+          padding: 20px 10px; }
+
+.consultation {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eed8d8;
+  height: 400px;
+  width: 100%;
+  margin-top: 2135px;
+  padding: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .consultation__container {
+    height: 500px;
+    width: 700px; }
+    .consultation__container__picture {
+      position: relative;
+      top: 0;
+      left: 0; }
+      .consultation__container__picture img:hover {
+        -webkit-filter: grayscale(80%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(80%);
+        transition: 2s ease-in-out; }
+    .consultation__container__order {
+      position: absolute;
+      width: 400px;
+      height: 300px;
+      background-color: #dfbe9f;
+      top: 100px;
+      left: 800px;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 50%; }
+      .consultation__container__order button {
+        margin-top: 20px; }
+      .consultation__container__order p {
+        font-size: 20px; }
+
+.photo-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #f5d8d8;
+  height: 300px;
+  width: 100%;
+  margin-top: 2635px; }
+  .photo-container__box-1, .photo-container__box-2, .photo-container__box-3 {
+    min-width: 400px;
+    height: 300px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.contacts {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #dfbe9f;
+  height: 500px;
+  width: 100%;
+  margin-top: 2935px; }
+  .contacts__my-contact-box {
+    margin: 0 200px; }
+    .contacts__my-contact-box ul {
+      padding: 5px;
+      list-style-type: none;
+      text-decoration: none; }
+      .contacts__my-contact-box ul li {
+        list-style: none;
+        float: left;
+        padding: 5px; }
+  .contacts__my-contact-box:last-child {
+    align-items: flex-end; }
+
